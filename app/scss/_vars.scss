@@ -1,0 +1,45 @@
+$color-text: #ffffff;
+$color-background: #1c1c1c;
+$color-primary: #75dff8;
+$color-secondary: #3b3569;
+$color-accent: #caa1ff;
+$color-test: #ede4d2;
+
+$xs: 576px;
+$sm: 768px;
+$m: 992px;
+$lg: 1200px;
+$xl: 1400px;
+
+@mixin responsive($breakpoint) {
+  @if ($breakpoint == xs) {
+    @media (max-width: ($xs - 1px)) {
+      @content;
+    }
+  }
+  @if ($breakpoint == sm) {
+    @media (min-width: $xs) and (max-width: ($sm - 1px)) {
+      @content;
+    }
+  }
+  @if ($breakpoint == m) {
+    @media (min-width: $sm) and (max-width: ($m - 1px)) {
+      @content;
+    }
+  }
+  @if ($breakpoint == lg) {
+    @media (min-width: $m) and (max-width: ($lg - 1px)) {
+      @content;
+    }
+  }
+  @if ($breakpoint == xl) {
+    @media (min-width: $lg) and (max-width: ($xl - 1px)) {
+      @content;
+    }
+  }
+  @if ($breakpoint == xxl) {
+    @media (min-width: $xl) {
+      @content;
+    }
+  }
+}

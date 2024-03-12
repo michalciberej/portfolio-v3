@@ -1,0 +1,16 @@
+@use 'vars';
+
+$colors: (
+  'colorText': vars.$color-text,
+  'colorBackground': vars.$color-background,
+  'colorPrimary': vars.$color-primary,
+  'colorSecondary': vars.$color-secondary,
+  'colorAccent': vars.$color-accent,
+  'colorTest': vars.$color-test,
+);
+
+:export {
+  @each $key, $value in $colors {
+    #{unquote($key)}: $value;
+  }
+}

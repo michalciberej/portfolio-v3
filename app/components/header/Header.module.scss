@@ -1,0 +1,17 @@
+@use 'vars';
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 12rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  a,
+  button {
+    z-index: 9999;
+  }
+}

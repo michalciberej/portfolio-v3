@@ -1,0 +1,18 @@
+@use 'vars';
+
+.link {
+  font-size: 8rem;
+  font-weight: 700;
+  border: none;
+  background-color: transparent;
+  color: vars.$color-text;
+  transition: all 0.3s ease-out;
+
+  &:hover,
+  &:focus {
+    -webkit-text-stroke: 1.5px;
+    -webkit-text-stroke-color: vars.$color-text;
+    margin-left: 1rem;
+    color: transparent;
+  }
+}

@@ -1,0 +1,15 @@
+@use 'vars';
+
+.cursor {
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: vars.$color-text;
+  border-radius: 9999px;
+  position: fixed;
+  top: -0.5rem;
+  left: -0.5rem;
+  z-index: 100000;
+  user-select: none;
+  pointer-events: none;
+  mix-blend-mode: exclusion;
+}

@@ -1,0 +1,22 @@
+@use 'vars';
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: max-content;
+  position: relative;
+  z-index: 10000;
+
+  .logo {
+    color: inherit;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: none;
+    text-decoration: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
