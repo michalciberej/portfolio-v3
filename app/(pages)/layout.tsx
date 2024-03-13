@@ -9,7 +9,7 @@ import Header from '../components/header/Header';
 
 const font = Poppins({
   subsets: ['latin'],
-  weight: ['400', '700', '900'],
+  weight: ["100",'400', '700', '900'],
   preload: true,
 });
 

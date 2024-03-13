@@ -1,12 +1,13 @@
-@use 'vars';
+@use "vars";
 
 $colors: (
-  'colorText': vars.$color-text,
-  'colorBackground': vars.$color-background,
-  'colorPrimary': vars.$color-primary,
-  'colorSecondary': vars.$color-secondary,
-  'colorAccent': vars.$color-accent,
-  'colorTest': vars.$color-test,
+  "colorText": vars.$color-text,
+  "colorTextDark": vars.$color-text-dark,
+  "colorBackground": vars.$color-background,
+  "colorPrimary": vars.$color-primary,
+  "colorSecondary": vars.$color-secondary,
+  "colorAccent": vars.$color-accent,
+  "colorTest": vars.$color-test,
 );
 
 :export {

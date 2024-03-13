@@ -1,14 +1,13 @@
-import Header from '../components/header/Header';
 import Hero from '../components/hero/Hero';
+import LoadAnimationW from '../components/wrappers/LoadAnimationW';
+LoadAnimationW
 
 const HomePage = () => {
   return (
     <main>
-      <Hero />
-      <div style={{ height: '100vh', width: '100vw' }}></div>
-      <div style={{ height: '100vh', width: '100vw' }}></div>
-      <div style={{ height: '100vh', width: '100vw' }}></div>
-      <div style={{ height: '100vh', width: '100vw' }}></div>
+      <LoadAnimationW>
+        <Hero />
+      </LoadAnimationW>
     </main>
   );
 };

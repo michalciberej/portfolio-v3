@@ -1,16 +1,16 @@
-import gsap from 'gsap';
-import colors from '../scss/_colors.module.scss';
+import gsap from "gsap";
+import colors from "../scss/_colors.module.scss";
 
 const logoAnimation = (menuState: boolean) => {
-  const logo = document.querySelector('[data-logo]');
+  const logo = document.querySelector("[data-logo]");
 
   if (logo && menuState) {
     gsap.set(logo, { color: colors.colorText });
-    gsap.to(logo, { color: colors.colorBackground });
+    gsap.to(logo, { color: colors.colorTextDark });
   }
 
   if (logo && !menuState) {
-    gsap.set(logo, { color: colors.colorBackground });
+    gsap.set(logo, { color: colors.colorTextDark });
     gsap.to(logo, { color: colors.colorText });
   }
 };

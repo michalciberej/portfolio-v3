@@ -1,6 +1,8 @@
-@use 'vars';
+@use "vars";
 
 .body {
   background-color: vars.$color-test;
-  color: vars.$color-background;
+  color: vars.$color-text-dark;
+  padding: 0 10vw;
+  width: 100%;
 }
