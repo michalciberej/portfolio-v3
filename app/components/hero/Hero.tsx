@@ -1,10 +1,17 @@
-import S from './Hero.module.scss';
+import S from "./Hero.module.scss";
 
 const Hero = () => {
   return (
-    <div className={S.container}>
-      <h1 className={S.heading}>MICHAL</h1>
-    </div>
+    <section className={S.container}>
+      <h2 className={S.heading}>
+        Frontend
+        <br /> Developer
+      </h2>
+      <h2 className={S.subheading}>
+        Michal <br />
+        Ciberej
+      </h2>
+    </section>
   );
 };
 

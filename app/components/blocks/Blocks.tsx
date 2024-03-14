@@ -1,8 +1,8 @@
-import S from './Blocks.module.scss';
+import S from "./Blocks.module.scss";
 
 const Blocks = () => {
   return (
-    <div className={S.blocksContainer}>
+    <div className={S.blocksContainer} data-loadbg>
       <div />
       <div />
       <div />

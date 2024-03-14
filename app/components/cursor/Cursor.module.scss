@@ -1,4 +1,4 @@
-@use 'vars';
+@use "vars";
 
 .cursor {
   width: 0.5rem;
@@ -11,5 +11,5 @@
   z-index: 100000;
   user-select: none;
   pointer-events: none;
-  mix-blend-mode: exclusion;
+  mix-blend-mode: difference;
 }
