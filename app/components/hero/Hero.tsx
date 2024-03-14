@@ -2,6 +2,7 @@ import S from "./Hero.module.scss";
 
 const Hero = () => {
   return (
+
     <section className={S.container}>
       <h2 className={S.heading}>
         Frontend
