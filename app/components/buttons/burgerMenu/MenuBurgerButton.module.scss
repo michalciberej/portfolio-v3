@@ -9,6 +9,8 @@
   flex-direction: column;
   background-color: transparent;
   border: none;
+  position: relative;
+  z-index: 10000;
 
   div {
     background-color: vars.$color-text-dark;

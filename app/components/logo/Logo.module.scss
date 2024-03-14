@@ -1,9 +1,7 @@
-@use 'vars';
+@use "vars";
 
 .container {
   height: 100%;
-  width: 100%;
-  max-width: max-content;
   position: relative;
   z-index: 10000;
 
@@ -16,7 +14,7 @@
     background-color: transparent;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
   }
 }

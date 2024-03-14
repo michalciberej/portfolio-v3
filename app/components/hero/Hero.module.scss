@@ -1,17 +1,24 @@
 @use "vars";
 
 .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: aquamarine;
   width: 100%;
-  height: 100dvh;
-  display: grid;
+
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 400;
+  gap: 4rem;
 
   .heading {
-    letter-spacing: 1rem;
-    color: transparent;
-    -webkit-text-stroke: 3px;
-    -webkit-text-stroke-color: vars.$color-text-dark;
+    color: inherit;
+    line-height: 75%;
+  }
+
+  .subheading {
+    color: inherit;
+    line-height: 75%;
+    text-align: end;
   }
 }

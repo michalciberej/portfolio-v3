@@ -1,17 +1,17 @@
-import TransitionLink from '../buttons/transitionLink/TransitionLink';
-import S from './NavMenu.module.scss';
+import TransitionLink from "../buttons/transitionLink/TransitionLink";
+import S from "./NavMenu.module.scss";
 
 const paths = [
-  { label: 'About', href: '/about' },
-  { label: 'Projects', href: '/archive' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Contact', href: '/contact' },
+  { label: "About", href: "/about" },
+  { label: "Projects", href: "/archive" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const socials = [
-  { label: 'LinkedIn', href: '#' },
-  { label: 'GitHub', href: '#' },
-  { label: 'Some', href: '#' },
+  { label: "LinkedIn", href: "#" },
+  { label: "GitHub", href: "#" },
+  { label: "Some", href: "#" },
 ];
 
 const NavMenu = () => {
@@ -34,10 +34,7 @@ const NavMenu = () => {
           <ul>
             {paths.map((path) => (
               <li key={path.label}>
-                <TransitionLink
-                  label={path.label}
-                  href={path.href}
-                />
+                <TransitionLink label={path.label} href={path.href} />
               </li>
             ))}
           </ul>
@@ -46,9 +43,7 @@ const NavMenu = () => {
           <ul>
             {socials.map((social) => (
               <li key={social.label}>
-                <a
-                  href={social.href}
-                  data-socials>
+                <a href={social.href} data-socials>
                   {social.label}
                 </a>
               </li>
