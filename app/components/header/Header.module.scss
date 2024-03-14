@@ -1,4 +1,4 @@
-@use 'vars';
+@use "vars";
 
 .container {
   width: 100%;
@@ -9,6 +9,7 @@
   position: fixed;
   top: 0;
   left: 0;
+  color: vars.$color-text-dark;
 
   a,
   button {
